@@ -1,5 +1,5 @@
 /*
-Class for customer
+ * @author Sahil Puri
  */
 package carpurchaseutility;
 
@@ -7,10 +7,14 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- *
- * 
- * 
  * Customer class to hold details of the Customer
+ * Customer will have an id ,name and list of car.
+ * 
+ * @param int customerId - The id of the user
+ * @param String customerName - The name of the user
+ * 
+ * ArrayList customerCar  will be empty while creating user ,later on user can add car
+ * 
  */
 public class Customer {
      private final static int HYUNDAI = 1;             //
@@ -22,22 +26,42 @@ public class Customer {
     private final String customerName;
     ArrayList<Car> customerCar = new ArrayList<>();
     
-   
+   /**
+	 * This is Constructor of Customer class
+	 * @param id of int type 
+         * @param name of String Type
+	 * 
+	 * 
+	 */
     Customer(int id, String name) {
         customerId = id;
         customerName = name;
         } 
+    /**
+     * This method used to get id of Customer
+    
+     * @return customerId of current object of int type
+     */
     public int getCustomerId()
     {return customerId;
     }
+    /**
+     * This method used to get name of Customer
     
+     * @return customerName of current object of String type
+     */
     public String getCustomerName()
     {return customerName;
     }
 
  
 
+    /*
+    Method addCar
+    Adds new car to Current Customer.//
+    @param none
     
+*/
    
     public void addCar()
     {
@@ -64,6 +88,12 @@ public class Customer {
         }
          System.out.println("Car Added Successfully.");
     }
+    /*
+    Method diplay
+    Displays cars of Current Customer.//
+    @param none
+    
+*/
     public void display()
     {
         
