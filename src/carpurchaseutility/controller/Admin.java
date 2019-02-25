@@ -3,8 +3,10 @@
  * @author Sahil Puri
  */
 
-package carpurchaseutility;
+package carpurchaseutility.controller;
 
+import carpurchaseutility.util.RandomGenerator;
+import carpurchaseutility.model.Customer;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -104,7 +106,7 @@ public class Admin
     @param none
     
 */
-    void listById() {
+    public void listById() {
          int id;
        System.out.println("Enter Customer ID");
         id=sc.nextInt();
@@ -117,50 +119,12 @@ public class Admin
              
       }
     }
-    /*
-     Method generatePrizes
-    Generate prizes for Customers.//
-    @param none
-    
-*/
-    void generatePrize() {
-       ArrayList<Integer> adminChoosedIds = new ArrayList<>();
-       ArrayList<Customer> customers = customerList;
-       ArrayList<Integer> randomIds = new ArrayList<>();
-       System.out.println("Enter Three Customer Id:");
-       for(int i=0;i<3;i++)
-       {
-            System.out.println("Enter "+ (i+1) +" Customer Id:");
-           adminChoosedIds.add(sc.nextInt());
-       }
-       Collections.shuffle(customers);
-       if(customers.size() <= 6)
-       {
-           for(Customer c : customerList)
-           {
-               randomIds.add(c.getCustomerId());
-           }
-           
-           
-           randomIds.retainAll(adminChoosedIds);
-          for(int i=0;i<randomIds.size();i++)
-       {
-           System.out.println("The Winners are Customers with following ids: " + randomIds.get(i));
-       }
-       }
-       else{
-           
-           for(int i=0;i<6;i++)
-           {
-               randomIds.add(customerList.get(i).getCustomerId());
-           }
-           randomIds.retainAll(adminChoosedIds);
-          randomIds.retainAll(adminChoosedIds);
-          for(int i=0;i<randomIds.size();i++)
-       {
-           System.out.println("The Winners are Customers with following ids: " + randomIds.get(i));
-       }
-       }
-    }
+    public void generatePrize()
+    {
         
+   RandomGenerator.generateRandom(customerList);
+        
+    }
 }
+        
+

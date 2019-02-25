@@ -1,18 +1,17 @@
 /*
  * @author Sahil Puri
  */
-package carpurchaseutility;
+package carpurchaseutility.model;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+
 
 /**
  * Customer class to hold details of the Customer
  * Customer will have an id ,name and list of car.
  * 
- * @param int customerId - The id of the user
- * @param String customerName - The name of the user
- * 
+ *  
  * ArrayList customerCar  will be empty while creating user ,later on user can add car
  * 
  */
@@ -33,7 +32,7 @@ public class Customer {
 	 * 
 	 * 
 	 */
-    Customer(int id, String name) {
+    public Customer(int id, String name) {
         customerId = id;
         customerName = name;
         } 
@@ -102,6 +101,7 @@ public class Customer {
         carList.display();
     }
     }
+    
     
 }
  

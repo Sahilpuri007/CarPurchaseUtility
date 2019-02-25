@@ -1,5 +1,5 @@
 
-package carpurchaseutility;
+package carpurchaseutility.model;
  
 
 /**
@@ -12,7 +12,7 @@ package carpurchaseutility;
  * An abstract method resaleValue() which will be override by every Car
  * 
  */
-abstract class Car{
+abstract public class Car{
     
      int carId;
      String carModel;
