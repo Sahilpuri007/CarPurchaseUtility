@@ -119,6 +119,12 @@ public class Admin
              
       }
     }
+    /*
+     Method generatePrize
+    Calls Random Generator Method to get unique Customer Id.//
+    @param none
+    
+*/
     public void generatePrize()
     {
         

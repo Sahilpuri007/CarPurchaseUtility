@@ -17,9 +17,9 @@ import java.util.Scanner;
 public final class RandomGenerator {
     
     /*
-     Method generatePrizes
+     Method generatRandom
     Generate prizes for Customers.//
-    @param none
+    @param customerList ArrayList of Customer Type
     
 */
     public static void generateRandom(ArrayList<Customer> customerList) {
