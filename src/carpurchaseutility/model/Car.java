@@ -68,7 +68,7 @@ abstract public class Car{
  }
 /**
  * 
- * 
+ * Class Hyundai
  *This Class extends the property of Car class 
  *and Override calcResaleValue() which is a abstract method
  *
@@ -104,6 +104,13 @@ class Hyundai extends Car{
 
    
 }
+/**
+ * 
+ * Class Toyota
+ *This Class extends the property of Car class 
+ *and Override calcResaleValue() which is a abstract method
+ *
+ */
 class Toyota extends Car{
     /**
 	 * This is Constructor of Toyota class
@@ -135,6 +142,13 @@ class Toyota extends Car{
     
     
 }
+/**
+ * 
+ * Class Maruti
+ *This Class extends the property of Car class 
+ *and Override calcResaleValue() which is a abstract method
+ *
+ */
 class Maruti extends Car{
     /**
 	 * This is Constructor of Maruti class

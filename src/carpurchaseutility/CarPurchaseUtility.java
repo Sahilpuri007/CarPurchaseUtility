@@ -1,7 +1,7 @@
 /*
  * Assignment - Car purchase utility application
  */
-package carpurchaseutility.util;
+package carpurchaseutility;
 
 import carpurchaseutility.controller.Admin;
 import java.util.Scanner;
